@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 3em;
+}
+.logo-div {
+    display: flex;
+    gap: 0.2em;
+}
+.logo-text {
+    color: #0E0E0E;
+    font-weight: 700;
+    font-size: 1rem;
+}
+ul {
+    display: flex;
+    gap: 2em;
+    text-transform: uppercase;
+    list-style: none;
+}
+li a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.75rem;
+    color: #090909;
+}
+main {
+    background-color: #FAFAFA;
+}
+.hero{
+    background-image: url(images/blog-image-hero.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    color: #FFFFFF;
+    padding: 12em 4em 1em 3em;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.article-hero{
+    text-align: start;  
+}
+.article-date-hero {
+    margin-bottom: 0;
+    font-size: 0.75rem;
+}
+.article-title-hero{
+    margin-top: 0;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 108.2%;
+}
+.article-preview-hero{
+    margin-top: 0;
+    font-size: 1rem;
+}
+.content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2em; 
+    text-align: center; 
+    padding: 3em;
+}
+.content-title {
+    grid-column: 1/ -1;
+}
+.blog {
+    max-width: 100%;
+    text-align: start;
+    margin: 0.5em auto;
+}
+.blog-img {
+    width: 100%;
+}
+.blog-date {
+    font-size: 0.875rem;
+    color: #000000;
+}
+.blog-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 108.2%;
+    color: #141414;
+}
+.blog-preview {
+    font-size: 1rem;
+    line-height: 125%;
+    color: #505050;
+}
+.veiw {
+    text-align: center;
+    padding: 1em;
+}
+.veiw a {
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #000000;
+}
+footer {
+    background: #202020;
+    text-align: center;
+    padding: 2em;
+}
+.text {
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 108.2%;
+    letter-spacing: -3%;
+    color: #ECECEC;
+    text-transform: capitalize;
+}
+.copyright {
+    font-size: 0.75rem;
+    line-height: 125%;
+    color: #D7D7D7;
+}
+
+@media (min-width: 768px) {
+    .article-preview-hero{
+        max-width: 560px;
+    }
+    .hero {
+        padding-top: 25em;
+        padding-bottom: 3em;
+    }
+    .content{
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        padding: 2em;    
+    }
+}

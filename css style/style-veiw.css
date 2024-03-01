@@ -1,0 +1,29 @@
+.article-main {
+   padding: 3em; 
+}
+.article-img {
+    text-align: center;
+    width: 100%;
+}
+.article-hero {
+   color: #151515;
+}
+.content-title {
+    margin-top: 0;
+}
+.post-preview {
+    font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+    .main{
+        max-width: 900px;
+        margin: 0.5em auto;
+    }
+    .post-preview {
+        margin-bottom: 2em;
+    }
+    .sub-title {
+        margin-top: 2em;
+    }
+}

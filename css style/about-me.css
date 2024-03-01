@@ -1,0 +1,28 @@
+.about-me {
+    padding: 2em 3em;
+}
+.about-hero{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5em;
+}
+.about-title {
+    font-size: 2.125rem;
+    font-weight: 700;
+    line-height: 108.2%;
+}
+about-preview {
+    font-size: 1rem;
+}
+
+@media(min-width:768px){
+   .about {
+    max-width: 800px;
+   }
+   .about-preveiw {
+    max-width: 900px;
+   }
+   .about-me {
+    padding: 2em 5em;
+}     
+}
